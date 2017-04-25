@@ -6,7 +6,11 @@ RUN cd /usr/local;\
 	tar xJf node-v7.9.0-linux-x64.tar.xz;\
 	ln -s /usr/local/node-v7.9.0-linux-x64/bin/node /usr/local/bin/node;\
 	ln -s /usr/local/node-v7.9.0-linux-x64/bin/npm /usr/local/bin/npm;\
-	rm -f node-v7.9.0-linux-x64.tar.xz;
+	rm -f node-v7.9.0-linux-x64.tar.xz;\
+	alias cnpm="npm --registry=https://registry.npm.taobao.org \
+	--cache=$HOME/.npm/.cache/cnpm \
+	--disturl=https://npm.taobao.org/dist \
+	--userconfig=$HOME/.cnpmrc"
  
 
 
