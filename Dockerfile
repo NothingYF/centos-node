@@ -15,7 +15,7 @@ RUN echo "alias cnpm=\"npm --registry=https://registry.npm.taobao.org \
 	--disturl=https://npm.taobao.org/dist \
 	--userconfig=$HOME/.cnpmrc\"" >> /etc/bashrc;
  
-RUN cd ~;npm install -g node-gyp;npm install -g pm2
+RUN npm install -g node-gyp
 
 
 
