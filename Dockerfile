@@ -8,10 +8,10 @@ RUN cd /usr/local;\
 	ln -s /usr/local/node-$NODE_VER-linux-x64/bin/node /usr/local/bin/node;\
 	ln -s /usr/local/node-$NODE_VER-linux-x64/bin/npm /usr/local/bin/npm;\
 	rm -f node-$NODE_VER-linux-x64.tar.xz;
-RUN echo "export alias cnpm=\"npm --registry=https://registry.npm.taobao.org \
+RUN echo "alias cnpm=\"npm --registry=https://registry.npm.taobao.org \
 	--cache=$HOME/.npm/.cache/cnpm \
 	--disturl=https://npm.taobao.org/dist \
-	--userconfig=$HOME/.cnpmrc\"" >> ~/.bash_profile;
+	--userconfig=$HOME/.cnpmrc\"" >> /etc/bashrc;
  
 
 
