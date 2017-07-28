@@ -1,7 +1,7 @@
 # Version 1.0.1
 
 FROM nothingdocker/centos-systemd
-ENV NODE_VER v8.1.3
+ENV NODE_VER v8.2.1
 RUN cd /usr/local;\ 
 	wget https://nodejs.org/dist/$NODE_VER/node-$NODE_VER-linux-x64.tar.xz;\
 	tar xJf node-$NODE_VER-linux-x64.tar.xz;\
