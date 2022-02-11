@@ -11,7 +11,7 @@ RUN cd /usr/local;\
 	ln -s /usr/local/node/bin/npm /usr/local/bin/npm
 RUN echo "PATH=/usr/local/node/bin:$PATH" >> /etc/bashrc; \
 	echo "export PATH" >> /etc/bashrc;
-RUN echo "alias cnpm=\"npm --registry=https://registry.npm.taobao.org \
+RUN echo "alias cnpm=\"npm --registry=https://registry.npmmirror.com \
 	--cache=$HOME/.npm/.cache/cnpm \
 	--disturl=https://npm.taobao.org/dist \
 	--userconfig=$HOME/.cnpmrc\"" >> /etc/bashrc;
